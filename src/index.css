@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
   --color-brand-50: oklch(0.97 0.02 290);
   --color-brand-100: oklch(0.93 0.045 290);
   --color-brand-200: oklch(0.87 0.08 290);
@@ -24,7 +27,7 @@
 @keyframes slideLeft { from { transform: translateX(-100%) } to { transform: none } }
 
 html { -webkit-font-smoothing: antialiased; }
-body { @apply bg-slate-50 text-slate-900; }
+body { background: #f6f4fb; @apply text-slate-900; }
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
 .recharts-cartesian-axis-tick-value { font-size: 11px; fill: #64748b; }
